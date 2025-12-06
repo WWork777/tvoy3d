@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tvoy3d.ru/
+
+# Sitemaps
+Sitemap: https://tvoy3d.ru/sitemap.xml

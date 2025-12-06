@@ -1,0 +1,89 @@
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+    h3 {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 50px;
+        width: 60%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    
+        .inline-fields {
+            display: flex;
+            gap: 10px;
+    
+            input[type="text"],
+            input[type="email"] {
+                flex: 1;
+                height: 50px;
+                background-color: #f7f7f7;
+                border: none;
+                border-radius: 6px;
+                padding: 0 10px;
+                width: calc(70% - 5px); 
+                outline: none;
+            }
+        }
+    
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: none;
+            border-radius: 5px;
+        }
+    
+        textarea {
+            min-height: 150px;
+            outline: none;
+        }
+    
+        input[type="file"] {
+            padding: 10px 10px;
+        }
+       }
+}
+@media (max-width: 768px) {
+    .contactform{
+        h3 {
+            font-size: 22px;
+            margin: 30px 3% 10px 3%;
+        }
+        
+        form {
+            width: 90%;
+            padding: 0;
+            .inline-fields {
+                flex-direction: column;
+                input[type="text"],
+                input[type="email"] {
+                    flex: 1;
+                    height: 50px;
+                    background-color: #f7f7f7;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 10px;
+                    width: 100%; 
+                }
+            }
+
+            textarea,
+            input[type="file"] {
+                padding: 8px 10px;
+            }
+
+            textarea {
+                min-height: 100px;
+            }
+        }
+    }
+}

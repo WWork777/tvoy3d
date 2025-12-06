@@ -1,0 +1,122 @@
+.sale{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    .services-card{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        height: 100%;
+        padding: 10px;
+        div{
+            p{
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+            span{
+                font-size: 20px;
+                font-weight: 400;
+                color: black;
+            }
+            .red{
+                color: #ca0011;
+                font-size: 26px;
+                font-weight: 600;
+            }
+            .bold{
+                font-weight: 600;
+                color: #ca0011;
+                font-size: 34px;
+            }
+        }
+    }
+    img{
+        padding: 30px;
+        width:300px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .services-card{
+        div{
+            p{
+                font-size: 28px !important;
+            }
+            .red{
+                font-size: 23px !important;
+            }
+            .bold{
+                font-size: 30px !important;
+            }
+        }
+        img{
+            width:200px !important;
+        }
+    }
+    .sale{
+        padding: 20px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sale{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services-card{
+        
+        div{
+            .red{
+                font-size: 20px !important;
+            }
+            .bold{
+                font-size: 26px !important;
+            }
+            p{
+                font-size: 22px !important;
+            }
+            span{
+                font-size: 22px !important;
+            }
+        }
+        img{
+            width:150px !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .sale{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services-card{
+        
+        div{
+            p{
+                font-size: 16px !important;
+            }
+            span{
+                font-size: 16px !important;
+            }
+        }
+       
+    }
+    .sale-img{
+        display: none !important;
+     }
+}
+  

@@ -1,0 +1,95 @@
+.card-grid {
+    margin: 50px 12% 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px;
+    padding: 20px;
+    p{
+        text-align: center;
+    }
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки для планшетов */
+        margin: 30px 8%;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr); /* Одна колонка для мобильных устройств */
+        margin: 20px 5%;
+        padding: 15px;
+    }
+}
+
+.price-container {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    height: 100%;
+
+    @media (max-width: 768px) {
+        padding: 10px; /* Уменьшить padding на мобильных устройствах */
+    }
+}
+
+.block-buttons-price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+
+    button {
+        border-radius: 30px;
+        padding: 10px 30px;
+        border: 2px solid black;
+        background: transparent;
+        transition: .3s;
+        color: black;
+        &:hover {
+            background: #ca0011;
+            color: white;
+            border: 2px solid #ca0011;
+        }
+
+        @media (max-width: 768px) {
+            padding: 8px 25px; /* Уменьшить кнопки на мобильных устройствах */
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        display: grid;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .card-carousel-mobile {
+        display: none; /* Скрыть карусель на больших экранах */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        display: none; /* Скрыть сетку на мобильных устройствах */
+    }
+
+    .card-carousel-mobile {
+        .slick-list {
+            height: 450px !important;
+        }
+      
+
+        display: block;
+        width: 100%;
+        margin: 20px auto 100px auto;
+        padding: 0 10px;
+        p{
+            text-align: center;
+        }
+    }
+}

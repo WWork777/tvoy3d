@@ -1,0 +1,240 @@
+@import "/public/const.scss";
+@import "swiper/css";
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-in-p {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-line {
+  from {
+    transform: translateY(20vh);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.swiper-slide-active .car-line,
+.swiper-slide-active .buttons-car {
+  animation: slide-line 1s ease-out forwards;
+}
+.swiper-slide-active h2 {
+  animation: slide-in 1s ease-out forwards;
+}
+.swiper-slide-active p {
+  animation: slide-in-p 1s ease-out forwards;
+}
+
+.slide-text {
+  position: relative;
+  width: 50%;
+  color: white;
+  padding-left: 10%;
+  font-size: 46px;
+  font-weight: 700;
+  .slide-text-r {
+    color: $red;
+  }
+  @media (max-width: 1400px) {
+    font-size: 30px !important;
+    width: 70% !important;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 28px !important;
+  }
+}
+.slide-text-p {
+  position: relative;
+  width: 50%;
+  color: white;
+  padding-left: 10%;
+  font-size: 40px;
+  //text-transform: uppercase;
+  font-weight: 300;
+  span {
+    font-weight: 600;
+    color: #db1125;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 20px !important;
+  }
+}
+
+.slick-prev {
+  left: -5% !important;
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 1;
+  svg {
+    fill: #666;
+    width: 40px !important;
+    height: 40px !important;
+    transition: 0.3s;
+  }
+}
+.slick-prev::before {
+  content: none !important;
+}
+.slick-next {
+  right: -5% !important;
+  width: 50px !important;
+  height: 50px !important;
+  svg {
+    fill: #666;
+    width: 40px !important;
+    height: 40px !important;
+    transition: 0.3s;
+  }
+}
+.slick-next::before {
+  content: none !important;
+}
+.slick-next:hover {
+  svg {
+    fill: $red;
+  }
+}
+.slick-prev:hover {
+  svg {
+    fill: $red;
+  }
+}
+.slick-next:active {
+  svg {
+    transform: scale(0.9);
+  }
+}
+.slick-prev:active {
+  svg {
+    transform: scale(0.9);
+  }
+}
+
+.mySwiper3 {
+  margin-top: 100px;
+  position: relative;
+  width: 80%;
+  height: 60vh;
+  border-radius: 15px;
+  @media (max-width: 768px) {
+    width: 100%;
+    border-radius: 0px;
+    margin-top: 85px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mySwiper3 {
+  .fon-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    .buttons-car {
+      display: flex;
+      flex-direction: row;
+      column-gap: 40px;
+      padding-left: 10%;
+      padding-top: 30px;
+      .d-btn {
+        font-size: 16px;
+      }
+    }
+  }
+  .background-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    .car-line {
+      height: 7px;
+      width: 8%;
+      background: white;
+      border-radius: 5px;
+      margin: 40px 10%;
+    }
+  }
+  .swiper-pagination {
+    margin-bottom: 3vh;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+    width: 70px;
+    height: 70px;
+    transition: 0.3s;
+  }
+  .swiper-button-next {
+    right: 1%;
+  }
+  .swiper-button-prev {
+    left: 1%;
+  }
+  .swiper-button-next:active,
+  .swiper-button-prev:active {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 992px) {
+  .slide-text {
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .mySwiper3 .background-image .car-line {
+    width: 30%;
+    margin: 20px 5%;
+  }
+  .slide-text-p {
+    font-size: 16px;
+  }
+  .mySwiper3 .fon-img .buttons-car {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding-left: 5%;
+    padding-top: 30px;
+    .d-btn {
+      font-size: 14px;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 82% !important;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 11.6% !important;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,140 @@
+@import "/public/const.scss";
+
+.contactform {
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  span {
+    color: $red;
+  }
+  h5 {
+    margin-top: 50px;
+    a {
+      text-decoration: none;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
+  h3 {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  form {
+    margin-top: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .inline-fields {
+      display: flex;
+      gap: 10px;
+
+      input[type="text"],
+      input[type="email"] {
+        flex: 1;
+        height: 50px;
+        background-color: #f7f7f7;
+        border: none;
+        border-radius: 6px;
+        padding: 0 10px;
+        width: calc(70% - 5px);
+        outline: none;
+      }
+    }
+
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #f7f7f7;
+      border: none;
+      border-radius: 5px;
+    }
+    textarea {
+      min-height: 150px;
+      outline: none;
+    }
+
+    input[type="file"] {
+      padding: 10px 10px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .contactform {
+    margin: 80px 0;
+    p {
+      width: 80%;
+      text-align: center;
+    }
+    h5 {
+      text-align: center;
+      width: 80%;
+    }
+    h3 {
+      margin-top: 50px;
+    }
+
+    form {
+      width: 90%;
+      padding: 0;
+      .inline-fields {
+        flex-direction: column;
+        input[type="text"],
+        input[type="email"] {
+          flex: 1;
+          height: 50px;
+          background-color: #f7f7f7;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 10px;
+          width: 100%;
+        }
+      }
+
+      textarea,
+      input[type="file"] {
+        padding: 8px 10px;
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .contactform {
+    p {
+      width: 90%;
+      text-align: center;
+      margin-top: 10px;
+    }
+    h5 {
+      text-align: center;
+      width: 80%;
+    }
+    .d-btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+.image-gallery-thumbnail {
+  border: 2px solid transparent !important;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 2px solid #ca0011 !important;
+}
+.image-gallery-thumbnail:hover {
+  //outline: none;
+  border: 2px solid #ca0011 !important;
+}
+.image-gallery-icon {
+  .image-gallery-svg {
+    transition: transform 0.3s ease-in-out;
+  }
+}
+.image-gallery-icon:hover {
+  color: #ca0011 !important;
+  .image-gallery-svg {
+    transform: scale(1.04) !important;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+  line-height: 0;
+}
+.custom-gallery:not(.image-gallery-fullscreen) .image-gallery-slide img {
+  max-height: 60vh;
+  object-fit: contain;
+}
+.custom-gallery.image-gallery-fullscreen .image-gallery-slide img {
+  max-height: none; /* Снимаем ограничение по высоте в полноэкранном режиме */
+  width: 100%; /* Растягиваем изображение на всю ширину экрана */
+  height: 100%; /* Растягиваем изображение на всю высоту экрана */
+  object-fit: contain; /* Подгоняем изображение, сохраняя соотношение сторон */
+}
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next::after {
+  color: rgb(0, 0, 0) !important;
+}
+.swiper-button-prev::after {
+  color: black !important;
+}
+.slider-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .galary {
+    margin: 50px 15%;
+    //background: #111010;
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: white;
+    }
+    .swiper-pagination-bullet-active {
+      background: white;
+    }
+    .mySwiper {
+      height: 45vh;
+    }
+    .swiper-slide {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition-property: transform;
+      display: block;
+      //margin-right: 20px !important;
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    margin: 0 20%;
+  }
+
+  .p-galleria-content {
+    width: 100%;
+  }
+
+  .p-galleria {
+    margin: 50px auto;
+  }
+
+  .p-galleria-item-container {
+    background-color: rgb(41, 41, 41);
+  }
+
+  @media (max-width: 1800px) {
+    .galary {
+      margin: 50px 11%;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .galary {
+      margin: 50px 0;
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 50% !important;
+      }
+      .swiper-pagination-horizontal {
+        bottom: 0 !important;
+        z-index: 2;
+      }
+    }
+    p {
+      font-size: 16px;
+      margin: 0 10%;
+    }
+
+    .p-galleria {
+      margin: 30px auto;
+    }
+
+    .p-galleria-item-container {
+      height: auto;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    p {
+      font-size: 16px;
+      margin: 0 10%;
+    }
+
+    .p-galleria {
+      margin: 30px auto;
+    }
+
+    .p-galleria-item-container {
+      height: auto;
+    }
+    .p-galleria .p-galleria-item {
+      width: 100%;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
