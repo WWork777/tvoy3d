@@ -12,7 +12,7 @@ import FormApplication from "../../components/Home/Forms/FormApplication";
 import Partners from "../../components/Home/Partners/Partners";
 import Sale from "../../components/Home/Sale/page";
 import AboutBlock from "../../components/aboutblock";
-import SaleBlock from "../../components/sale/sale";
+// import SaleBlock from "../../components/sale/sale";
 import ContactsForm from "../../components/ContactsForm/ContactsForm";
 
 export const metadata = {
@@ -105,7 +105,7 @@ export default function Home() {
     <>
       <Carousel />
       {/* <Sale /> */}
-      <SaleBlock />
+      {/* <SaleBlock /> */}
       {/* <Quiz /> */}
       <ContactsForm />
 
