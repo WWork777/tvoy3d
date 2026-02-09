@@ -107,7 +107,47 @@ export default function Home() {
       {/* <Sale /> */}
       {/* <SaleBlock /> */}
       {/* <Quiz /> */}
-      <ContactsForm />
+      {/* <ContactsForm /> */}
+
+      <div className="content-cards--progress" style={{marginTop:"120px"}}>
+        <h2 className="title">Наш процесс оформления заказа</h2>
+        <div className="cards">
+          <div className="card">
+            <div className="card-title">Оставьте заявку онлайн</div>
+            <div className="card-subtitle">
+              Загрузите свой дизайн детали в нашу форму онлайн предложений и
+              опишите свои требования к производству детали
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-title">Получите мгновенное предложение</div>
+            <div className="card-subtitle">
+              Мы проанализируем ваш запрос, составим спецификации, определим
+              цену и продолжительность производства
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-title">Производство</div>
+            <div className="card-subtitle">
+              После согласования предложения производство начинается немедленно
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-title">Контроль качества</div>
+            <div className="card-subtitle">
+              Мы несем полную ответственность за то, чтобы ваши детали были
+              изготовлены в соответствии с нашими стандартами
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-title">Доставка</div>
+            <div className="card-subtitle">
+              Проверяем заказ перед отправкой и доставляем транспортной
+              компанией
+            </div>
+          </div>
+        </div>
+      </div>
 
       <AboutBlock />
       <Portfolio />
@@ -170,45 +210,6 @@ export default function Home() {
                   </span>
                 </div>
               </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="content-cards--progress">
-        <h2 className="title">Наш процесс оформления заказа</h2>
-        <div className="cards">
-          <div className="card">
-            <div className="card-title">Оставьте заявку онлайн</div>
-            <div className="card-subtitle">
-              Загрузите свой дизайн детали в нашу форму онлайн предложений и
-              опишите свои требования к производству детали
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-title">Получите мгновенное предложение</div>
-            <div className="card-subtitle">
-              Мы проанализируем ваш запрос, составим спецификации, определим
-              цену и продолжительность производства
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-title">Производство</div>
-            <div className="card-subtitle">
-              После согласования предложения производство начинается немедленно
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-title">Контроль качества</div>
-            <div className="card-subtitle">
-              Мы несем полную ответственность за то, чтобы ваши детали были
-              изготовлены в соответствии с нашими стандартами
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-title">Доставка</div>
-            <div className="card-subtitle">
-              Проверяем заказ перед отправкой и доставляем транспортной
-              компанией
             </div>
           </div>
         </div>
