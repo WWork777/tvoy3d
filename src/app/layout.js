@@ -1,7 +1,7 @@
 import "./main.scss";
 import "./Home.scss";
 import "./NotFound.scss";
-import "./about/About.scss";
+import "./about/about.scss";
 import "./personal/Personal.scss";
 import "./vacancy/Vacancy.scss";
 import "./vacancy/vacancyform/VacancyForm.scss";
