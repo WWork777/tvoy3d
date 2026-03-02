@@ -628,6 +628,9 @@ function Footer() {
             </ul>
           </div>
         </div>
+        <div className="footer_copyright">
+            <a href="https://virlab42.ru">Сайт разработан компанией <span>Вирлаб</span></a>
+          </div>
       </footer>
     </>
   );
